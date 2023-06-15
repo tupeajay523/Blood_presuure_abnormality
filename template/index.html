@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Patient_with_abnormal_bloodpressure</title>
+    <link rel="stylesheet" href='/staticFiles/style.css' />
+
+
+          
+</head>
+
+<body>
+    
+
+
+    <div style="color:rgb(0, 0, 0)">
+        <form action="{{url_for('predict')}}" method="post">
+
+   
+    <h1><b><span style="font-size: larger;">***Blood Pressure Abnormality***</span></b></h1>
+
+    <br><br>
+
+    <input type="text" name="Level_of_Hemoglobin" placeholder="Level_of_Hemoglobin" required="required" />
+    <input type="text" name="Genetic_Pedigree_Coefficient" placeholder="Genetic_Pedigree_Coefficient" required="required" />
+    <br><br>
+    <input type="text" name="Age" placeholder="Age" required="required" />
+    <input type="text" name="BMI" placeholder="BMI" required="required" />
+
+
+    <h3>What Is the Gender?</h3>
+            			<select name="Sex" id="smoke" required="required">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+
+    <h3>Are you pregnant?</h3>
+            			<select name="Pregnancy" id="smoke" required="required">
+                <option value="0.0">No</option>
+                <option value="1.0">Yes</option>
+            </select>
+
+    
+    <h3>Do You Smoke?</h3>
+            			<select name="Smoking" id="smoke" required="required">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+<br><br>
+    <input type="text" name="Physical_activity" placeholder="Physical_activity" required="required" />
+
+    <input type="text" name="salt_content_in_the_diet" placeholder="salt_content_in_the_diet" required="required" />
+    <br><br>
+
+    <input type="text" name="alcohol_consumption_per_day" placeholder="alcohol_consumption_per_day" required="required" />
+
+    <br><br>
+
+    
+    <h3>Level_of_Stress</h3>
+            <select name="Level_of_Stress" id="smoke" required="required">
+              <option value="1">Level_1</option>
+              <option value="2">Level_2</option>
+              <option value="3">Level_3</option>
+            </select>
+
+            <br><br>
+
+        <h3>you have Chronic_kidney_disease	?</h3>
+            			<select name="Chronic_kidney_disease" id="smoke" required="required">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <br><br>
+
+
+        <h3>you have Adrenal_and_thyroid_disorders</h3>
+            			<select name="Adrenal_and_thyroid_disorders" id="smoke" required="required">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <br><br>
+            <br><br><button id="sub" type="submit ">Prediction</button>
+            <br>
+
+            </form>
+
+            <br><br>
+            {{ predicting.... }}
+        </div>
+        
+
+
+</body>
+</html>
